@@ -1,0 +1,25 @@
+to triangle :length 
+
+  repeat 3 [
+    forward :length
+    right 120
+  ]
+
+end
+
+to starofdavid :length
+
+  triangle :length
+  pu 
+  make "x :length /3 
+  forward :x
+  pd 
+  left 60 
+  backward :x + :x
+  triangle :length
+
+end
+
+reset
+left 30
+starofdavid 50 
