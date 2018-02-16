@@ -1,0 +1,18 @@
+to square :length
+  repeat 4 [
+    forward :length
+    right 90
+  ]
+end
+
+to flower :count :length
+  make "angle (360/:count)
+  repeat :count [
+    square :length
+    right :angle
+  ]
+end
+
+reset
+penwidth 1
+flower 50 150
